@@ -1,46 +1,47 @@
 #!/bin/bash
 
 cat << 'EOF' > README.md
-# 🚀 AI Workflow Engine  
-### A Minimal Graph-Based Workflow Orchestration System (FastAPI)
+# 🎯 **AI Workflow Engine**
+### _Tiny. Modular. Async. Agentic._
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue" />
-  <img src="https://img.shields.io/badge/FastAPI-Backend-brightgreen" />
-  <img src="https://img.shields.io/badge/Async-Supported-purple" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow" />
+  <img src="https://img.shields.io/badge/Build-Minimal-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-0ea5e9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Agentic-Workflows-purple?style=for-the-badge" />
 </p>
 
 ---
 
-## 📌 Overview  
-**AI Workflow Engine** is a lightweight framework for executing **node-based workflows** with shared state, branching, loops, tools, and async support.
+## 🌟 What It Is  
+A super-light **graph-based workflow engine** for AI/LLM pipelines.  
+Think: *nodes → edges → shared state → async execution*.
 
 ---
 
-## ✨ Features  
-- Node-based graph execution  
-- Conditional branching & loops  
-- Shared state  
-- Async support  
-- Tool registry  
-- FastAPI API
+## ⚡ Highlights  
+- ⚙️ Node-driven graph execution  
+- 🔁 Conditional edges + loops  
+- 📦 Shared mutable state  
+- ⚡ Async support  
+- 🧰 Tool registry  
+- 🌐 FastAPI routes  
 
 ---
 
-## 🏗 Project Structure  
+## 🧩 Architecture
 \`\`\`
 app/
- ├── main.py  
- ├── engine.py  
- ├── tools.py  
- ├── workflows.py  
+ ├── engine.py
+ ├── main.py
+ ├── tools.py
+ ├── workflows.py
  └── stores.py
 \`\`\`
 
 ---
 
-## ⚙️ Run  
+## 🚀 Quick Start
 \`\`\`bash
 python -m venv venv
 source venv/bin/activate
@@ -50,78 +51,19 @@ uvicorn app.main:app --reload --port 8000
 
 ---
 
-## 📡 Endpoints  
+## 🛰 API
 - POST /graph/create  
 - POST /graph/run  
-- GET /graph/state/{run_id}
+- GET /graph/state/{run_id}  
 
 ---
 
-## 📝 License  
-MIT License.
-EOF
-#!/bin/bash
-
-cat << 'EOF' > README.md
-# 🚀 AI Workflow Engine  
-### A Minimal Graph-Based Workflow Orchestration System (FastAPI)
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue" />
-  <img src="https://img.shields.io/badge/FastAPI-Backend-brightgreen" />
-  <img src="https://img.shields.io/badge/Async-Supported-purple" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow" />
-</p>
+## 🤖 Example Workflow
+Code Review Mini-Agent.
 
 ---
 
-## 📌 Overview  
-**AI Workflow Engine** is a lightweight framework for executing **node-based workflows** with shared state, branching, loops, tools, and async support.
 
----
-
-## ✨ Features  
-- Node-based graph execution  
-- Conditional branching & loops  
-- Shared state  
-- Async support  
-- Tool registry  
-- FastAPI API
-
----
-
-## 🏗 Project Structure  
-\`\`\`
-app/
- ├── main.py  
- ├── engine.py  
- ├── tools.py  
- ├── workflows.py  
- └── stores.py
-\`\`\`
-
----
-
-## ⚙️ Run  
-\`\`\`bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-\`\`\`
-
----
-
-## 📡 Endpoints  
-- POST /graph/create  
-- POST /graph/run  
-- GET /graph/state/{run_id}
-
----
-
-## 📝 License  
-MIT License.
-EOF
 
 
 
